@@ -130,3 +130,25 @@ a {
     font-size: 1.2rem;
   }
 }
+
+/* Lists */
+.list {
+  padding-left: 0;
+  list-style: none;
+}
+
+.list--tick {
+  color: var(--color-headings);
+  list-style-image: url(/images/tick.svg);
+  padding-left: 3rem;
+}
+
+.list--tick .list__item {
+  padding-left: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .list--tick .list__item {
+    padding-left: 0;
+  }
+}
