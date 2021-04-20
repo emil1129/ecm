@@ -417,6 +417,7 @@ a {
 /* Media */
 .media {
   display: flex;
+  margin-bottom: 4rem;
 }
 
 .media__title {
@@ -785,5 +786,30 @@ a {
 
   .feature__heading {
     font-size: 2.4rem;
+  }
+}
+
+/* Block Showcase */
+.block-showcase__image {
+  width: 100%;
+}
+
+.block-showcase .media__title {
+  color: #fff;
+}
+
+.block-showcase .media__body {
+  color: #7b858b;
+}
+
+@media screen and (min-width: 768px) {
+  .block-showcase__image {
+    width: auto;
+    max-width: 700px;
+    justify-self: end;
+  }
+
+  .block-showcase .grid {
+    grid-template-columns: 50% 50%;
   }
 }
