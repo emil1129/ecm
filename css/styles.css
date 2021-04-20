@@ -362,3 +362,17 @@ a {
     font-size: 1.7rem;
   }
 }
+
+/* Media */
+.media {
+  display: flex;
+}
+
+.media__title {
+  margin-top: 0;
+}
+
+.media__image {
+  margin-top: 1rem;
+  margin-right: 2rem;
+}
