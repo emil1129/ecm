@@ -12,6 +12,8 @@
   --color-accent: #ff3400;
   --color-headings: #210e6b;
   --color-body: #918ca4;
+  --color-border: #ccc;
+  --border-radius: 30px;
 }
 
 /* Typhography */
@@ -238,11 +240,33 @@ a {
 
 /* Input */
 .input {
-  border: 1px solid #ccc;
-  border-radius: 30px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  color: var(--color-headings);
   padding: 1.5rem 2rem;
   outline: 0;
   font-size: 2rem;
+}
+
+.input-group {
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  display: flex;
+}
+
+.input-group .input {
+  border: 0;
+  flex-grow: 1;
+  width: 0;
+}
+
+.input-group .btn {
+  margin: 4px;
+}
+
+::placeholder {
+  color: #cac5df;
+  font-weight: 300;
 }
 
 @media screen and (min-width: 1024px) {
