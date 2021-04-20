@@ -235,3 +235,18 @@ a {
     font-size: 1.5rem;
   }
 }
+
+/* Input */
+.input {
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  padding: 1.5rem 2rem;
+  outline: 0;
+  font-size: 2rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .input {
+    font-size: 1.5rem;
+  }
+}
