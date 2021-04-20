@@ -323,13 +323,26 @@ a {
   font-size: 2rem;
   font-weight: 300;
   letter-spacing: 1px;
-  display: inline-block;
+  display: block;
 }
 
 .plan .list__item {
   margin-bottom: 2rem;
   letter-spacing: 1px;
   font-weight: 500;
+}
+
+.plan--popular .card__header {
+  position: relative;
+}
+
+.plan--popular .card__header::before {
+  content: url(../images/popular.svg);
+  display: inline-block;
+  position: absolute;
+  right: 5%;
+  top: -6px;
+  width: 40px;
 }
 
 @media screen and (min-width: 1024px) {
