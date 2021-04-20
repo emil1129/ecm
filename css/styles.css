@@ -567,7 +567,6 @@ a {
 .block {
   --vertical-padding: 6rem;
   padding: var(--vertical-padding) 2rem;
-  border: 2px solid red;
 }
 
 .block__heading {
@@ -657,5 +656,34 @@ a {
     margin: 0 1rem;
     font-size: 1.8rem;
     border: 0;
+  }
+}
+
+/* Hero */
+.hero__heading {
+  color: #fff;
+}
+
+.hero__tagline {
+  color: #b9c3cf;
+  margin: 2rem 0 4rem;
+}
+
+.hero__image {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 0;
+  }
+
+  .hero .block__header {
+    text-align: left;
+    align-self: center;
+  }
+
+  .hero__tagline {
+    font-size: 2.2rem;
   }
 }
